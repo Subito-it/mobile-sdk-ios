@@ -179,7 +179,10 @@ NSString *const kANWebViewControllerMraidJSFilename = @"mraid.js";
         
         // This injects OMID JS to the HTML
         // NOTE this is intentionally kept above prependViewport if moved below it causes the tag to shrink.
-        htmlToLoad = [[ANOMIDImplementation sharedInstance] prependOMIDJSToHTML:html];
+        
+        // This injection was causing our interstitial to break, displaying a
+        // blank page.
+        // htmlToLoad = [[ANOMIDImplementation sharedInstance] prependOMIDJSToHTML:html];
         
         
         if (!_configuration.scrollingEnabled) {
