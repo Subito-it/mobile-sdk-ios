@@ -99,8 +99,10 @@
       },
       "source_files": "mediation/mediatedviews/GoogleAdMob/*.{h,m}",
       "public_header_files": "mediation/mediatedviews/GoogleAdMob/ANAdAdapterNativeAdMob.h",
+      "libraries": "GoogleMobileAds",
       "xcconfig": {
-        "FRAMEWORK_SEARCH_PATHS": "${PODS_ROOT}/Google-Mobile-Ads-SDK/**"
+        "FRAMEWORK_SEARCH_PATHS": "${PODS_ROOT}/Google-Mobile-Ads-SDK/**",
+        "LIBRARY_SEARCH_PATHS": "${PODS_ROOT}/Google-Mobile-Ads-SDK/**"
       }
     },
     {
